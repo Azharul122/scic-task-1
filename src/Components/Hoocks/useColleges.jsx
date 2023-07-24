@@ -16,7 +16,7 @@
 //       if (isLoading) {
 //         <FaSpinner></FaSpinner>;
 //       }
-//       const res = await fetch("http://localhost:5000/colleges/");
+//       const res = await fetch("http://localhost:4000/colleges/");
 //       const data = await res.json();
 
 //       return data;

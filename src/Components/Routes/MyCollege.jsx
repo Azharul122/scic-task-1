@@ -19,7 +19,7 @@ const MyCollege = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/colleges/");
+        const response = await axios.get("http://localhost:4000/colleges/");
         setColleges(response.data);
         setIsLoading(false);
       } catch (error) {
@@ -47,7 +47,7 @@ const handleReviw=(event)=>{
 
     const result={rating,feadback,name:user?.displayName,collegeName}
    
-    fetch(`http://localhost:5000/review`, {
+    fetch(`http://localhost:4000/review`, {
         method: "POST",
         headers: {
             "content-type": "application/json",

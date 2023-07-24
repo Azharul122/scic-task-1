@@ -11,7 +11,7 @@ const CollegeDetails = () => {
   const [college, setCollege] = useState();
   const [isLoading, setIsLoading] = useState(true);
   console.log(college);
-  fetch(`http://localhost:5000/college/${id}`)
+  fetch(`http://localhost:4000/college/${id}`)
     .then((res) => res.json())
     .then((data) => {
       setIsLoading(false);
@@ -24,7 +24,7 @@ const CollegeDetails = () => {
   //     useEffect(() => {
   //       const fetchData = async () => {
   //         try {
-  //           const response = await axios.get(`http://localhost:5000/colleges/${id}`);
+  //           const response = await axios.get(`http://localhost:4000/colleges/${id}`);
   //           setColleges(response.data);
   //           setIsLoading(false);
   //         } catch (error) {

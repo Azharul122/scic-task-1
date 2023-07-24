@@ -10,12 +10,12 @@ const Home = () => {
   const [colleges, setColleges] = useState([]);
   const [reviews, setReviews] = useState([]);
   // const [filterClasses,setFilterClasses]=useState([])
-  // http://localhost:5000/reviews
+  // http://localhost:4000/reviews
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/colleges/");
+        const response = await axios.get("http://localhost:4000/colleges/");
         setColleges(response.data);
         setIsLoading(false);
       } catch (error) {
@@ -29,7 +29,7 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/reviews/");
+        const response = await axios.get("http://localhost:4000/reviews/");
         setReviews(response.data);
         setIsLoading(false);
       } catch (error) {

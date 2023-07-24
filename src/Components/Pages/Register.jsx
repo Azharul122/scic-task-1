@@ -32,7 +32,7 @@ const Register = () => {
           email: user.email,
           photoURL: user.photoUR,
         };
-        fetch(`http://localhost:5000/users`, {
+        fetch(`http://localhost:4000/users`, {
           method: "POST",
           headers: {
             "content-type": "application/json",
@@ -105,7 +105,7 @@ const Register = () => {
           //         }
           //     });//then data
 
-          axios.post("http://localhost:5000/users", saveUser).then((res) => {
+          axios.post("http://localhost:4000/users", saveUser).then((res) => {
             console.log(res.data.insertedId);
             if (res.data.insertedId) {
               Swal.fire({
