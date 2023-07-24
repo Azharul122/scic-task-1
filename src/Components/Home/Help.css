@@ -1,0 +1,9 @@
+.groupPhoto:hover .GPconntent{
+    right: 0;
+}
+.groupPhoto{
+    overflow: hidden;
+}
+.GPconntent{
+    transition: all 0.5s;
+}

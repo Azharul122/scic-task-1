@@ -1,0 +1,19 @@
+.gradient-text {
+    background-image: linear-gradient(to right, white, #F8F8F8); /* Replace these colors with your desired gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgb(230, 55, 55);
+  }
+  
+
+
+@media only screen and (max-width: 770px) {
+    .menu{
+        display: none;
+        
+    }
+    .NavbarTitle{
+      display: none;
+    }
+  }
